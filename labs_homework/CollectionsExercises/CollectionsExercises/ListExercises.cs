@@ -34,12 +34,12 @@ namespace CollectionsExercisesLib
        // returns a list of all the strings in sourceList that start with the letter 'A' or 'a'
         public static List<string> MakeAList(List<string> sourceList)
         {
-            var aList = new List<string>();
+            var sList = new List<string>();
             foreach (string item in sourceList)
             {
-                if (item.ToLower()[0] == 'a') aList.Add(item);
+                if (item.ToLower()[0] == 'a') sList.Add(item);
             }
-            return aList;
+            return sList;
         }
     }
 }
