@@ -1,11 +1,12 @@
 ﻿using System;
 
 namespace RadioApp
-{ 
-public class Radio 
+{
+    public class Radio
     {
         private int _channel = 1;
         private bool _on;
+        private int _volume = 0;
 
         public Radio()
         {
@@ -44,8 +45,21 @@ public class Radio
         {
             _on = true;
         }
+        
+        public int IncreaseVolume()
+        {
+            _volume++;
+            return _volume;
+        }
+
+        public int DecreaseVolume()
+        {
+
+            _volume--;
+            return _volume;
+        }
     }
-    }
+}
 
     // implement a class Radio that corresponds to the Class diagram 
     //   and specification in the Radio_Mini_Project document
