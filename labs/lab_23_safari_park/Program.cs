@@ -7,12 +7,12 @@ namespace lab_23_safari_park
     {
         static void Main(string[] args)
         {
-            Camera pentax = new Camera("Pentax");
+            Camera pentax = new Camera("Pentax"); // instantiate object
             WaterPistol pistol = new WaterPistol("Supersoaker");
             LaserGun laserGun = new LaserGun("Acme");
             Hunter nish = new Hunter("Nish", "Mandal", pentax);
 
-            Console.WriteLine(nish.Shoot());
+            Console.WriteLine(nish.Shoot()); // calls the Shoot method in hunter class to get full name and s
             nish.Shooter = pistol;
             Console.WriteLine(nish.Shoot());
             nish.Shooter = laserGun;

@@ -13,9 +13,9 @@ namespace lab_23_safari_park
             _brand = brand;
         }
 
-        public virtual string Shoot()
+        public virtual string Shoot() // calls parent to string
         {
-            return $"Shooting with a {_brand}";
+            return $"Shooting with a {base.ToString()} {_brand}"; // 
         }
 
 
@@ -25,7 +25,7 @@ namespace lab_23_safari_park
         }
     }
 
-    class LaserGun : Weapon
+    class LaserGun : Weapon // inhertis brand from weapon class and takes brand
     {
         public LaserGun(string brand) : base(brand)
         {
@@ -40,14 +40,14 @@ namespace lab_23_safari_park
 
     class WaterPistol : Weapon
     {
-        public WaterPistol(string brand) : base(brand)
+        public WaterPistol(string brand) : base(brand) 
         {
 
         }
 
         public override string Shoot()
         {
-            return $"Water!! {base.Shoot()}";
+            return $"Splash!! {base.Shoot()}";
         }
     }
 }

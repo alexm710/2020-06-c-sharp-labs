@@ -23,7 +23,7 @@ namespace lab_23_safari_park
         }
 
         //Constructor must have the same name as the class --> doesn't return a value
-        //ctor -> shortcut to create a constructor
+        //ctor -> shortcut to create a constructor  
         //As for a method we can overload contructors and set a default parameter
         public Person(string fName, string lName)
         {

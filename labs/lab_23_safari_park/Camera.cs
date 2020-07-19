@@ -13,14 +13,11 @@ namespace lab_23_safari_park
             _brand = brand;
         }
 
-        public string Shoot(string brand)
+        public string Shoot() // taking the method shoot from Ishootable interface
         {
-            return $"{base.ToString()} {_brand}";
+            return $"Shooting a {base.ToString()} {_brand}";
         }
 
-        public string Shoot()
-        {
-            return $" Shooting a {ToString()}";
-        }
+
     }
 }

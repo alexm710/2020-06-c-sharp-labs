@@ -9,24 +9,22 @@ namespace lab_23_safari_park
     {
         public IShootable Shooter { get; set; } // Autoimplemented property called shooter of Ishootable type
 
-        public Hunter(string fName, string lName, IShootable shooter) : base(fName, lName) //Base represents Parent or Superclass
+        public Hunter(string fName, string lName, IShootable shooter) : base(fName, lName) // Inherits first name/last name from parent class.                 Takes Base represents Parent or Superclass. // 
         {
             Shooter = shooter; // don't need to call anything else as it implements from Person class
 
         }
 
-        // Cannot have an argument less in the constructor once it's inherited, unless the Parent Child already exists
+        // Cannot have an argument-less in the constructor once it's inherited, unless the Parent Child already exists
         public Hunter()
         {
 
         }
         public string Shoot()
         {
-            return $"{GetFullName()} has chosen their {Shooter}";
+            return $"{GetFullName()}: {Shooter.Shoot()}";
         }
-        //public string Shoot(string shoot) {
-        //    return "";
-        //}
+
 
 
         public override string ToString()
