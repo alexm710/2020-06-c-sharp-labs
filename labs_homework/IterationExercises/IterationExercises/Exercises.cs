@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace IterationLib
 {
@@ -11,6 +12,8 @@ namespace IterationLib
             //ignore
         }
     }
+
+
     public class Exercises
     {
         // returns the lowest number in the array nums
@@ -21,6 +24,29 @@ namespace IterationLib
             else
                 return nums.Min();
         }
+
+        // return lowest num in a list, max int if list is empty
+        public static int FindLowest(List<int> nums)
+        {
+            if (nums.Count == 0) return int.MaxValue;
+            nums.Sort();
+            return nums[0];
+        }
+
+        // return lowest num in a list, max int if list is empty method #2
+        public static int FindLowest1(List<int> nums)
+        {
+            int lowest = int.MaxValue;
+            if (nums.Count == 0)
+                return int.MaxValue;
+            foreach (int i in nums)
+                if (i < lowest)
+                {
+                    lowest = i;
+                }
+            return lowest;
+}
+
 
         // returns the sum of all numbers between 1 and n inclusive that are divisible by either 2 or 5
         public static int SumEvenFive(int max)

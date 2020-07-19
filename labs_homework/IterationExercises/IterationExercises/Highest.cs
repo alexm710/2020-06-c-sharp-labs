@@ -4,11 +4,16 @@
     {
         public static int HighestWhileLoop(int[] nums)
         {
-            // this method should use a for loop
-            int highest = nums[0];
-            for (int i = 1; i < nums.Length; i++)
+            // this method should use a while loop
+            int highest = int.MinValue;
+            int i = 0;
+            while (i < nums.Length)
             {
-                if (nums[i] > highest) highest = nums[i];
+                if (nums[i] > highest)
+                {
+                    highest = nums[i];
+                }
+                i++;
             }
             return highest;
         }
