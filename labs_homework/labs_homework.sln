@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioAppGUI", "RadioAppGUI\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api_from_scratch", "api_from_scratch\api_from_scratch.csproj", "{EABE6643-933F-4A17-A4EF-B7DC09F25370}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegate_homework", "delegate_homework\delegate_homework.csproj", "{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{EABE6643-933F-4A17-A4EF-B7DC09F25370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EABE6643-933F-4A17-A4EF-B7DC09F25370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EABE6643-933F-4A17-A4EF-B7DC09F25370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
