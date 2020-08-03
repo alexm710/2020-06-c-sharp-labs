@@ -1,6 +1,8 @@
 using NUnit.Framework;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
 using lab_15_unit_testing;
+using lab_22_exceptions;
+using System;
 
 namespace lab_16_nunit_testing
 {
@@ -29,6 +31,16 @@ namespace lab_16_nunit_testing
         {
             // Assert
             Assert.AreEqual(16, _sum);
+        }
+
+        // TESTS FROM EXCEPTIONS LAB //
+
+        [TestCase(-1)]
+        [TestCase(3)]
+        public void Test (int pos)
+        {
+            var ex = Assert.Throws<ArgumentException>(() => Beatles.AddBeatle(pos, "Brian"));
+            Assert.AreEqual($"The Beatles do not have a position {pos}", ex.Message, "Excepetion message not correct}")
         }
     }
 }
