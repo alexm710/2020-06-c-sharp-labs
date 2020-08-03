@@ -22,7 +22,7 @@ namespace RadioAppGUI
     public partial class MainWindow : Window
     {
         Radio radio = new Radio();
-        static string channel = "";
+        //static string channel = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -33,28 +33,25 @@ namespace RadioAppGUI
         private void Btn1_Click(object sender, RoutedEventArgs e)
         {
             radio.Channel = 1;
-            channel = radio.Play();
+            //channel = radio.Play();
             LabelDisplay.Content = radio.Play();
         }
 
         private void Btn2_Click(object sender, RoutedEventArgs e)
         {
             radio.Channel = 2;
-            channel = radio.Play();
             LabelDisplay.Content = radio.Play();
         }
 
         private void Btn3_Click(object sender, RoutedEventArgs e)
         {
             radio.Channel = 3;
-            channel = radio.Play();
             LabelDisplay.Content = radio.Play();
         }
 
         private void Btn4_Click(object sender, RoutedEventArgs e)
         {
             radio.Channel = 4;
-            channel = radio.Play();
             LabelDisplay.Content = radio.Play();
         }
 
@@ -63,22 +60,17 @@ namespace RadioAppGUI
         private void BtnChanUp_Click(object sender, RoutedEventArgs e)
         {
             radio.Channel += 1;
-            channel = radio.Play();
             LabelDisplay.Content = radio.Play();
-            if (radio.Channel > 4)
-            {
-                LabelDisplay.Content = "There are only 4 channels";
-            }
+
         }
         
 
         private void BtnChanDown_Click(object sender, RoutedEventArgs e)
         {
             radio.Channel -= 1;
-            channel = radio.Play();
             LabelDisplay.Content = radio.Play();
         }
-
+        // Radio On // Off
         private void BtnPowerOn_Click(object sender, RoutedEventArgs e)
         {
             radio.TurnOn();
@@ -90,22 +82,22 @@ namespace RadioAppGUI
             radio.TurnOff();
             LabelDisplay.Content = radio.Play();
         }
-
+        // Radio Volume
         private void BtnVolUp_Click(object sender, RoutedEventArgs e)
         {
-            radio.IncreaseVolume();
-            LabelDisplay.Content = radio.IncreaseVolume();
+
+            LabelDisplay.Content = ($"Volume is: {radio.IncreaseVolume()}");
         }
 
         private void BtnVolDown_Click(object sender, RoutedEventArgs e)
         {
-            radio.DecreaseVolume();
-            LabelDisplay.Content = radio.DecreaseVolume();
+            LabelDisplay.Content = ($"Volume is: {radio.DecreaseVolume()}");
+            
+            
         }
 
         private void BtnPlay_Click(object sender, RoutedEventArgs e)
         {
-            radio.Play();
             LabelDisplay.Content = radio.Play();
         }
     }
