@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\lab_23_safari_park\lab_23_safari_park.csproj" />
+  </ItemGroup>
+
 </Project>

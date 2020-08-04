@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding ="UTF-8" standalone="no"?>
+<academy title = "Sparta Global Academy">
+<trainer1>
+    <name> Alex Matheakis </name>
+    <course> CSharpDev </course>
+    <location> Bedroom </location>
+<trainer1/>
+
+<trainer2>
+    <name> John Barbosa </name>
+    <course> SDET </course>
+    <location> Academy </location>
+<trainer2/>
+

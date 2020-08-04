@@ -6,7 +6,7 @@ namespace RadioApp
     {
         private int _channel = 1;
         private bool _on;
-        private int _volume = 0;
+        private int _volume = 1;
 
         public Radio()
         {
@@ -48,13 +48,20 @@ namespace RadioApp
         
         public int IncreaseVolume()
         {
+            if (_volume > 50)
+            {
+                throw new Exception("Maximum volume is 50");
+            }
             _volume++;
             return _volume;
         }
 
         public int DecreaseVolume()
         {
-
+            if (_volume < 0)
+            {
+                throw new Exception ("Minimum volume is 0");
+            }
             _volume--;
             return _volume;
         }
