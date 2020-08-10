@@ -6,7 +6,7 @@ namespace delegate_homework
     class Program
     {
         // Multicast Delegates In C#
-        // Another great feature of delegates is that you can combine them together.This is called multicasting. You can use the + or += operator to add another method to the invocation list of an existing delegate instance. 
+        // Another great feature of delegates is that you can combine them together. This is called multicasting. You can use the + or += operator to add another method to the invocation list of an existing delegate instance. 
         // Similarly, you can also remove a method from an invocation list by using the decrement assignment operator (- or -=). This feature forms the base for events in C#. Below is a multicast delegate example.
         static void Hello(string s)
         {
