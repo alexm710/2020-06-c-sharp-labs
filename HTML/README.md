@@ -18,4 +18,4 @@
 
 ## Javascript
 
-[HTNL](HTML/README.md)
+[HTML](HTML/README.md)
