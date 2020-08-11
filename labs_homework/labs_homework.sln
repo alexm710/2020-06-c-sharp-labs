@@ -37,9 +37,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadioTests", "RadioAppStart
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadioAppGUI", "RadioAppGUI\RadioAppGUI.csproj", "{52566F9D-A0B5-44C8-B681-F9F405F40F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api_from_scratch", "api_from_scratch\api_from_scratch.csproj", "{EABE6643-933F-4A17-A4EF-B7DC09F25370}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "api_from_scratch", "api_from_scratch\api_from_scratch.csproj", "{EABE6643-933F-4A17-A4EF-B7DC09F25370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegate_homework", "delegate_homework\delegate_homework.csproj", "{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "delegate_homework", "delegate_homework\delegate_homework.csproj", "{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "football_api_from_scratch", "football_api_from_scratch\football_api_from_scratch.csproj", "{6217731B-8F01-4167-B3E3-169F247BF99B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "football_from_scratch_core", "football_from_scratch_core\football_from_scratch_core.csproj", "{29325915-64D1-49E9-8802-DD23EEC9AA4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dog_owner_entity_first_code_api", "dog_owner_entity_first_code_api\dog_owner_entity_first_code_api.csproj", "{CD1F20CD-267E-44ED-A3C9-D03FD8090BEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +129,18 @@ Global
 		{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96B0F0A1-B075-435B-9B84-2FA04B6E1F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6217731B-8F01-4167-B3E3-169F247BF99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6217731B-8F01-4167-B3E3-169F247BF99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6217731B-8F01-4167-B3E3-169F247BF99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6217731B-8F01-4167-B3E3-169F247BF99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29325915-64D1-49E9-8802-DD23EEC9AA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29325915-64D1-49E9-8802-DD23EEC9AA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29325915-64D1-49E9-8802-DD23EEC9AA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29325915-64D1-49E9-8802-DD23EEC9AA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1F20CD-267E-44ED-A3C9-D03FD8090BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1F20CD-267E-44ED-A3C9-D03FD8090BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1F20CD-267E-44ED-A3C9-D03FD8090BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1F20CD-267E-44ED-A3C9-D03FD8090BEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
